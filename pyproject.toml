@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=70"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "network-resilience-analyzer"
+version = "0.1.0"
+description = "Analyze delay, jitter, packet loss, throughput, and resilience from network experiment CSV files."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Zahra Shahraki" }
+]
+dependencies = [
+  "matplotlib>=3.8,<4",
+  "pandas>=2.2,<3"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[project.scripts]
+network-resilience-analyzer = "network_resilience_analyzer.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
