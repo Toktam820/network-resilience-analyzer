@@ -93,13 +93,19 @@ network-resilience-analyzer/
 └── pyproject.toml                # Python package configuration
 ```
 
-## What I learned
+## Project status
 
-- Designing a reproducible data-analysis pipeline
-- Separating metric calculation, visualization, and command-line code
-- Validating input data and handling packet loss explicitly
-- Writing automated tests for network-performance calculations
-- Running tests automatically with GitHub Actions
+This project is an initial learning project developed with AI assistance.
+
+My goal is to use it to understand:
+
+- How Python reads network data from CSV files
+- How packet loss, delay, jitter, and throughput are calculated
+- How a Python project is organized into separate files
+- How automated tests verify calculations
+- How Git and GitHub are used to track project changes
+
+As I continue working on the project, I will document the features and calculations that I implement or modify myself.
 
 ## Possible next steps
 
